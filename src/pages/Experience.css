@@ -1,0 +1,304 @@
+/* Theme Switcher */
+.theme-switcher {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.theme-switcher label {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.theme-select {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+.theme-select:hover {
+    background-color: var(--primary-light);
+}
+
+.theme-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.theme-select option {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+/* Blue Theme (Default) */
+[data-theme="blue"] {
+    --primary-color: #2196f3;
+    --primary-light: rgba(33, 150, 243, 0.1);
+    --primary-dark: #1976d2;
+    --text-color: #333;
+    --text-light: #666;
+    --bg-color: white;
+    --shadow-color: rgba(33, 150, 243, 0.1);
+}
+
+/* Purple Theme */
+[data-theme="purple"] {
+    --primary-color: #9c27b0;
+    --primary-light: rgba(156, 39, 176, 0.1);
+    --primary-dark: #7b1fa2;
+    --text-color: #333;
+    --text-light: #666;
+    --bg-color: white;
+    --shadow-color: rgba(156, 39, 176, 0.1);
+}
+
+.experience {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.experience-header h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.experience-header p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* Removing the vertical line */
+.timeline::before {
+    display: none;
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-content {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    width: calc(50% - 2rem);
+    margin-left: auto;
+    position: relative;
+    border-left: 4px solid var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+/* Restoring alternating layout */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0;
+    margin-right: auto;
+    border-left: none;
+    border-right: 4px solid var(--primary-color);
+}
+
+/* Removing the dots */
+.timeline-content::before {
+    display: none;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before,
+.timeline-item:nth-child(even) .timeline-content::before {
+    display: none;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.timeline-header h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.period {
+    color: var(--primary-color);
+    font-weight: 600;
+    background: var(--primary-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.timeline-content h3 {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+}
+
+.details li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-color);
+}
+
+.details li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.experience-footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    background: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.experience-footer p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-info p {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    background: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Dark theme styles */
+.dark-theme .experience-header h1 {
+    color: #ffffff;
+}
+
+.dark-theme .experience-header p {
+    color: #cccccc;
+}
+
+.dark-theme .timeline-content {
+    background: #2d2d2d;
+}
+
+.dark-theme .timeline-content h3 {
+    color: #cccccc;
+}
+
+.dark-theme .location {
+    color: #999999;
+}
+
+.dark-theme .experience-footer {
+    background: #2d2d2d;
+}
+
+.dark-theme .experience-footer p {
+    color: #cccccc;
+}
+
+.dark-theme .timeline-content:hover {
+    background: var(--primary-light);
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-content {
+        width: 100%;
+        margin-left: 0 !important;
+        border-left: 4px solid var(--primary-color);
+        border-right: none;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        display: none;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .period {
+        margin-top: 0.5rem;
+    }
+
+    .experience-footer {
+        padding: 1.5rem;
+    }
+} 
