@@ -14,7 +14,7 @@ import './App.css';
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/Website">
         <div className="app">
           <Navbar />
           <main className="main-content">

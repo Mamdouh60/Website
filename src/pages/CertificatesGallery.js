@@ -1,67 +1,84 @@
 import React from 'react';
 import './CertificatesGallery.css';
 
+// Import images with JPEG format for better performance
+import image2 from '../assets/images/certificates/image2.jpeg';
+import image3 from '../assets/images/certificates/image3.jpeg';
+import image4 from '../assets/images/certificates/image4.jpeg';
+import image5 from '../assets/images/certificates/image5.jpeg';
+import image6 from '../assets/images/certificates/image6.jpeg';
+import image7 from '../assets/images/certificates/image7.jpeg';
+import image8 from '../assets/images/certificates/image8.jpeg';
+import image9 from '../assets/images/certificates/image9.jpeg';
+import image10 from '../assets/images/certificates/image10.jpeg';
+import image11 from '../assets/images/certificates/image11.jpeg';
+import image12 from '../assets/images/certificates/image12.jpeg';
+import image13 from '../assets/images/certificates/image13.jpeg';
+import image14 from '../assets/images/certificates/image14.jpeg';
+import image15 from '../assets/images/certificates/image15.jpeg';
+import image16 from '../assets/images/certificates/image16.jpeg';
+
 const CertificatesGallery = () => {
     const certificates = [
         {
             name: "Certificate 1",
-            path: "../images/Certificates/image2.jpeg   "
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image2.jpeg`
         },
         {
             name: "Certificate 2",
-            path: "../images/Certificates/image3.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image3.jpeg`
         },
         {
             name: "Certificate 3",
-            path: "../images/Certificates/image4.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image4.jpeg`
         },
         {
             name: "Certificate 4",
-            path: "../images/Certificates/image5.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image5.jpeg`
         },
         {
             name: "Certificate 5",
-            path: "../images/Certificates/image6.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image6.jpeg`
         },
         {
             name: "Certificate 6",
-            path: "../images/Certificates/image7.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image7.jpeg`
         },
         {
             name: "Certificate 7",
-            path: "../images/Certificates/image8.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image8.jpeg`
         },
         {
             name: "Certificate 8",
-            path: "../images/Certificates/image9.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image9.jpeg`
         },
         {
             name: "Certificate 9",
-            path: "../images/Certificates/image10.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image10.jpeg`
         },
         {
             name: "Certificate 10",
-            path: "../images/Certificates/image11.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image11.jpeg`
         },
         {
             name: "Certificate 11",
-            path: "../images/Certificates/image12.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image12.jpeg`
         },
         {
             name: "Certificate 12",
-            path: "../images/Certificates/image13.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image13.jpeg`
         },
         {
             name: "Certificate 13",
-            path: "../images/Certificates/image14.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image14.jpeg`
         },
         {
             name: "Certificate 14",
-            path: "../images/Certificates/image15.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image15.jpeg`
         },
         {
             name: "Certificate 15",
-            path: "../images/Certificates/image16.jpeg"
+            path: `${process.env.PUBLIC_URL}/images/Certificates/image16.jpeg`
         }
     ];
 
@@ -89,7 +106,13 @@ const CertificatesGallery = () => {
                             className="gallery-item"
                             onClick={() => handleDownload(cert.path, cert.name)}
                         >
-                            <img src={cert.path} alt={cert.name} />
+                            <img
+                                src={cert.path}
+                                alt={cert.name}
+                                loading="lazy"
+                                width="300"
+                                height="200"
+                            />
                             <div className="gallery-item-overlay">
                                 <span>Click to Download</span>
                             </div>

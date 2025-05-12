@@ -5,7 +5,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div className="home">
-            <section className="hero">
+            <section className="hero" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${process.env.PUBLIC_URL}/images/HotelImage2.jpg')` }}>
                 <div className="hero-content">
                     <h1>Mamdouh El Sedawy</h1>
                     <h2>Hotels Director of Engineering</h2>
