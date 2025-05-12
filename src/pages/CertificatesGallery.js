@@ -5,63 +5,63 @@ const CertificatesGallery = () => {
     const certificates = [
         {
             name: "Certificate 1",
-            path: "/images/Certificates/image2.jpeg"
+            path: "../images/Certificates/image2.jpeg   "
         },
         {
             name: "Certificate 2",
-            path: "/images/Certificates/image3.jpeg"
+            path: "../images/Certificates/image3.jpeg"
         },
         {
             name: "Certificate 3",
-            path: "/images/Certificates/image4.jpeg"
+            path: "../images/Certificates/image4.jpeg"
         },
         {
             name: "Certificate 4",
-            path: "/images/Certificates/image5.jpeg"
+            path: "../images/Certificates/image5.jpeg"
         },
         {
             name: "Certificate 5",
-            path: "/images/Certificates/image6.jpeg"
+            path: "../images/Certificates/image6.jpeg"
         },
         {
             name: "Certificate 6",
-            path: "/images/Certificates/image7.jpeg"
+            path: "../images/Certificates/image7.jpeg"
         },
         {
             name: "Certificate 7",
-            path: "/images/Certificates/image8.jpeg"
+            path: "../images/Certificates/image8.jpeg"
         },
         {
             name: "Certificate 8",
-            path: "/images/Certificates/image9.jpeg"
+            path: "../images/Certificates/image9.jpeg"
         },
         {
             name: "Certificate 9",
-            path: "/images/Certificates/image10.jpeg"
+            path: "../images/Certificates/image10.jpeg"
         },
         {
             name: "Certificate 10",
-            path: "/images/Certificates/image11.jpeg"
+            path: "../images/Certificates/image11.jpeg"
         },
         {
             name: "Certificate 11",
-            path: "/images/Certificates/image12.jpeg"
+            path: "../images/Certificates/image12.jpeg"
         },
         {
             name: "Certificate 12",
-            path: "/images/Certificates/image13.jpeg"
+            path: "../images/Certificates/image13.jpeg"
         },
         {
             name: "Certificate 13",
-            path: "/images/Certificates/image14.jpeg"
+            path: "../images/Certificates/image14.jpeg"
         },
         {
             name: "Certificate 14",
-            path: "/images/Certificates/image15.jpeg"
+            path: "../images/Certificates/image15.jpeg"
         },
         {
             name: "Certificate 15",
-            path: "/images/Certificates/image16.jpeg"
+            path: "../images/Certificates/image16.jpeg"
         }
     ];
 
