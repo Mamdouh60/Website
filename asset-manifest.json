@@ -1,14 +1,28 @@
 {
   "files": {
-    "main.css": "/Website/static/css/main.c86c3057.css",
-    "main.js": "/Website/static/js/main.c1ffac6f.js",
-    "static/media/HotelImage2.jpg": "/Website/static/media/HotelImage2.9aa65b5fe062c80abc68.jpg",
+    "main.css": "/Website/static/css/main.60b425a7.css",
+    "main.js": "/Website/static/js/main.ca32231e.js",
+    "static/media/image15.jpeg": "/Website/static/media/image15.902e98e71f5ff6f053a6.jpeg",
+    "static/media/image4.jpeg": "/Website/static/media/image4.fc38d480a8f5c1b78d08.jpeg",
+    "static/media/image14.jpeg": "/Website/static/media/image14.c2dfda008786c4a01411.jpeg",
+    "static/media/image12.jpeg": "/Website/static/media/image12.b1c521f22be3a1256d94.jpeg",
+    "static/media/image2.jpeg": "/Website/static/media/image2.8482e748710492c651c4.jpeg",
+    "static/media/image16.jpeg": "/Website/static/media/image16.c922b1f41afa265ae04d.jpeg",
+    "static/media/image10.jpeg": "/Website/static/media/image10.a4ae7166efb2fde9e660.jpeg",
+    "static/media/image11.jpeg": "/Website/static/media/image11.a4ae7166efb2fde9e660.jpeg",
+    "static/media/image9.jpeg": "/Website/static/media/image9.595e1b53158937b49bf4.jpeg",
+    "static/media/image7.jpeg": "/Website/static/media/image7.dba3c9b9329d748529ee.jpeg",
+    "static/media/image6.jpeg": "/Website/static/media/image6.4a12773872727f556cfd.jpeg",
+    "static/media/image5.jpeg": "/Website/static/media/image5.256757734a7af2eb21ea.jpeg",
+    "static/media/image3.jpeg": "/Website/static/media/image3.d704c080a0c5657901f0.jpeg",
+    "static/media/image13.jpeg": "/Website/static/media/image13.ba87ba3af91e3196f936.jpeg",
+    "static/media/image8.jpeg": "/Website/static/media/image8.e5535a03d25298e7f91a.jpeg",
     "index.html": "/Website/index.html",
-    "main.c86c3057.css.map": "/Website/static/css/main.c86c3057.css.map",
-    "main.c1ffac6f.js.map": "/Website/static/js/main.c1ffac6f.js.map"
+    "main.60b425a7.css.map": "/Website/static/css/main.60b425a7.css.map",
+    "main.ca32231e.js.map": "/Website/static/js/main.ca32231e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c86c3057.css",
-    "static/js/main.c1ffac6f.js"
+    "static/css/main.60b425a7.css",
+    "static/js/main.ca32231e.js"
   ]
 }
