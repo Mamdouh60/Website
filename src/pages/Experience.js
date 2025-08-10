@@ -175,7 +175,7 @@ const Experience = () => {
 
             <div className="experience-footer">
                 <p>For a complete list of experience, please download my full CV</p>
-                <a href="/cv.pdf" className="download-btn" download>
+                <a href={`${process.env.PUBLIC_URL}/cv.pdf`} className="download-btn" download>
                     Download Full CV
                 </a>
             </div>
